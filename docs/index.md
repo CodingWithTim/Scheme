@@ -1,7 +1,9 @@
 # Scheme Language Interpreter
 
 ## A little about this project...
-This is a language interpreter for Scheme, which is part of the Lisp Language Family. For more info you can read more here: https://en.wikipedia.org/wiki/Scheme_(programming_language). It is written in Python and Scheme. To run the project, check README.md in the root project folder for instructions.
+This is a language interpreter for Scheme, which is part of the Lisp Language Family. For more info you can read more here: [en.wikipedia.org/wiki/Scheme](https://en.wikipedia.org/wiki/Scheme_(programming_language)).      
+
+It is written in Python and Scheme. To run the project, check README.md in the root project folder for instructions.        
 
 
 
@@ -28,7 +30,7 @@ scm> '(cons 1 2)  ; Equivalent to (quote (cons 1 2))
 
 
 ## Calls User-defined Procedures
-It has the ability to call user-defined procedures, which are basically functions in most programming languages. These procedures are Lambda procedure, using the (lambda ...) special form, Named Lambda procedures, using the (define (...) ...) special form, and Mu procedure with Dynamic Scope. For more info on Lexical Scoping vs Dynamic Scoping you can read more here: https://en.wikipedia.org/wiki/Scope_(computer_science)#Lexical_scope_vs._dynamic_scope_2
+It has the ability to call user-defined procedures, which are basically functions in most programming languages. These procedures are Lambda procedure, using the (lambda ...) special form, Named Lambda procedures, using the (define (...) ...) special form, and Mu procedure with Dynamic Scope. For more info on Lexical Scoping vs Dynamic Scoping you can read more here: [en.wikipedia.org/wiki/Scope](https://en.wikipedia.org/wiki/Scope_(computer_science)#Lexical_scope_vs._dynamic_scope_2)   
 
 ### Examples:   
 scm> (define (g y) (print y) (+ y 1))   
@@ -45,7 +47,7 @@ scm> (g)
 
 
 ## Handles Special Forms
-Logical special forms include if, and, or, and cond. These expressions are special because not all of their sub-expressions may be evaluated.
+Logical special forms include if, and, or, cond, let... These expressions are special because not all of their sub-expressions may be evaluated.
 
 ### Examples:
 
@@ -67,12 +69,12 @@ scm> (cond ((= 4 4) 'here (+ 40 2))(else 'wat 0))
 
 
 ## Project Structure
-scheme_eval_apply.py: the recursive evaluator for Scheme expressions    
-scheme_forms.py: evaluation for special forms   
-scheme_classes.py: classes that describe Scheme expressions   
-scheme.py: the interpreter REPL   
-pair.py: defines the Pair class and the nil object    
-scheme_builtins.py: built-in Scheme procedures    
-scheme_reader.py: the reader for Scheme input   
-scheme_tokens.py: the tokenizer for Scheme input    
-scheme_utils.py: functions for inspecting Scheme expressions    
+**scheme_eval_apply.py**: the recursive evaluator for Scheme expressions    
+**scheme_forms.py**: evaluation for special forms   
+**scheme_classes.py**: classes that describe Scheme expressions   
+**scheme.py**: the interpreter REPL   
+**pair.py**: defines the Pair class and the nil object    
+**scheme_builtins.py**: built-in Scheme procedures    
+**scheme_reader.py**: the reader for Scheme input   
+**scheme_tokens.py**: the tokenizer for Scheme input    
+**scheme_utils.py**: functions for inspecting Scheme expressions    
