@@ -1,10 +1,10 @@
 # Scheme Language Interpreter
 
-This is a language interpreter for Scheme, which is part of the Lisp Language Family. For more info you can read more here: https://en.wikipedia.org/wiki/Scheme_(programming_language)
+This is a language interpreter for Scheme, which is part of the Lisp Language Family. For more info you can read more here: https://en.wikipedia.org/wiki/Scheme_(programming_language). It is written in Python and Scheme.
 
 
 
-# What this Interpreter can do?
+# What can this Interpreter do?
 
 ## Evaulates Scheme Expressions
 It can evaluate built-in procedure calls, allowing it to compute expressions and nested expressions like a Calculator. If you run python3 scheme.py, you can now add, multiply, and more. Furthermore, it can assign variables with values, expressions, or procedures, using the Define keyword. You can also build lists and quoted expressions.
