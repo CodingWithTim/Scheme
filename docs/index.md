@@ -5,12 +5,15 @@ A language interpreter for Scheme, which is part of the Lisp Language Family. Fo
 
 This is a school project for my Structure and Interpretation of Computer Programs class at Univeristy of California, Berkeley. It is written in Python. To run the project, check README.md in the root project folder for instructions.        
 
-
+In short, the program has 3 main parts:   
+1. Reads the input from the user in the terminal
+2. Parses and tokenizes the input for the program to interpret
+3. Performs interpretations on the parsed input
 
 # What can this Interpreter do?
 
 ## Evaulates Scheme Expressions
-It can evaluate built-in procedure calls, allowing it to compute expressions and nested expressions like a Calculator. If you run python3 scheme.py, you can now add, multiply, and more. Furthermore, it can assign variables with values, expressions, or procedures, using the Define keyword. You can also build lists and quoted expressions.
+It can evaluate built-in procedure calls, allowing it to compute expressions and nested expressions like a calculator. If you run python3 scheme.py, you can now add, multiply, and more. Furthermore, it can assign variables with values, expressions, or procedures, using the define keyword. You can also build lists and quoted expressions.
 
 ### Example:    
 scm> (+ 1 2)  
@@ -40,7 +43,7 @@ scm> (g 3)
 4   
 scm> (define f (mu () (* a b)))   
 f   
-scm> (define g (lambda () (define a 4) (define b 5) (f)))   
+scm> (define g (lambda () (define a 4) (define b 5) (f)))  ;  nested functions    
 g   
 scm> (g)    
 20    
