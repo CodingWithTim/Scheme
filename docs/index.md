@@ -1,7 +1,7 @@
 # Scheme Language Interpreter
 
 ## A little about this project...
-A language interpreter for Scheme, which is part of the Lisp Language Family. For more info you can read more here: [en.wikipedia.org/wiki/Scheme](https://en.wikipedia.org/wiki/Scheme_(programming_language)).      
+A language interpreter for Scheme, which is part of the Lisp Language Family. For more info on what is Scheme you can read more here: [en.wikipedia.org/wiki/Scheme](https://en.wikipedia.org/wiki/Scheme_(programming_language)).      
 
 This is a school project for my Structure and Interpretation of Computer Programs class at Univeristy of California, Berkeley. It is written in Python. To run the project, check README.md in the root project folder for instructions.        
 
