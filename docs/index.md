@@ -1,15 +1,15 @@
-## A little about this project...
+# A little about this project...
 
 This is a language interpreter for Scheme, which is part of the Lisp Language Family. For more info you can read more here: https://en.wikipedia.org/wiki/Scheme_(programming_language)
 
 
 
-## What this Interpreter can do?
+# What this Interpreter can do?
 
-# Evaulates Scheme Expressions
+## Evaulates Scheme Expressions
 It can evaluate built-in procedure calls, allowing it to compute expressions and nested expressions like a Calculator. If you run python3 scheme.py, you can now add, multiply, and more. Furthermore, it can assign variables with values, expressions, or procedures, using the Define keyword. You can also build lists and quoted expressions.
 
-Example:
+### Example:
 
 scm> (+ 1 2)
 3
@@ -26,10 +26,10 @@ hello
 scm> '(cons 1 2)  ; Equivalent to (quote (cons 1 2))
 (cons 1 2)
 
-# Handle User-defined Procedures
+## Handle User-defined Procedures
 It has the ability to call user-defined procedures, which are basically functions in most programming languages. These procedures are Lambda procedure, using the (lambda ...) special form, Named Lambda procedures, using the (define (...) ...) special form, and Mu procedure with Dynamic Scope. For more info on Lexical Scoping vs Dynamic Scoping you can read more here: https://en.wikipedia.org/wiki/Scope_(computer_science)#Lexical_scope_vs._dynamic_scope_2
 
-Examples:
+### Examples:
 
 scm> (define (g y) (print y) (+ y 1))
 g
