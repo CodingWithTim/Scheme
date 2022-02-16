@@ -1,4 +1,4 @@
-# A little about this project...
+# Scheme Language Interpreter
 
 This is a language interpreter for Scheme, which is part of the Lisp Language Family. For more info you can read more here: https://en.wikipedia.org/wiki/Scheme_(programming_language)
 
